@@ -1,0 +1,260 @@
+/* CSS reset */
+body{
+    /* background-color: aquamarine; */
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* position: sticky; */
+    /* justify-content: center; */
+
+}
+
+/* navigation bar: logo and image */
+#logo {
+    margin: 10px 34px;
+    /* border-radius: 50%; */
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50%;
+
+}
+
+
+/* navigation bar: list styling */
+
+#navbar {
+    position: relative;
+    background-color: black;
+    /* position: fixed; */
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(16, 16, 16, 0.808);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    color: rgb(245, 242, 242);
+    display: block;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url("dinner\,set.img.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+    color: rgb(17, 16, 16);
+    /* color: rgb(104, 7, 250); */
+    text-align: center;
+    font-family: cursive;
+
+}
+
+#home p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.services-container{
+    /* background-image: url("dinner,set.img.jpg") no-repeat center center/cover; */
+    background-image: url("social.img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+
+}
+/* services section */
+#services{
+    /* margin: 34px; */
+    /* margin-top: -70px; */
+    display: flex;
+   
+}
+#services .box{
+    border: 2px solid brown;
+    margin-top: 20px;
+    background-color:red;
+}
+.box{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.box img{
+    /* <img src="pizza.img.jpg"> no-repeat center center/cover; */
+    height: 100px;
+    width: 50%; 
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+/* clients section */
+#client-section{
+    height: 300px;
+    position: relative;
+    margin-top: -9%;
+
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url("social.img.jpg") no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.client-item{
+    border: 10px solid rgb(18, 112, 235);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+    /* position: absolute; */
+
+}
+#clients img{
+    height: 120px;
+}
+
+/* #utility classes */
+.h-primary {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3 .8rem;
+    padding: 12px;
+    margin-top: 10%;
+    border: 2px solid red;
+}
+
+.h-secondary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    padding: 12px;
+    
+    
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 5px solid red;
+    background-color: white;
+    color: green;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 7px red;
+}
+.center{
+    text-align:center;
+}
+
+.btn :hover{
+    background-color: red;
+    color: pink;
+}
+#contact-box{
+    height: 200px;
+    width: 400px;
+}
+.form-group{
+    height: 600px;
+    width: 400px;
+    background-color: pink;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+#contact{
+    background-image: url("social.img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -9%;
+}
+.btn:hover{
+    background-color: red;
+
+}
+.btn:hover{
+    transform: rotate(360deg);
+    /* transform: skew(45deg); */
+    /* transform: translate(123px,123px); */
+    background-color:rgb(226, 6, 190);
+}
+
+
